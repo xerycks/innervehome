@@ -1,0 +1,144 @@
+#homepage #homepng {
+    width: 550px;
+}
+
+#homepage h1 {
+    font-size: 2.5rem;
+}
+
+#homepage .innerveprize h2 {
+    font-size: inherit;
+}
+
+#homepage .prizerect {
+    width: 95%;
+}
+
+@keyframes prize {
+    to {
+        font-size: 1.05rem;
+    }
+}
+
+#homepage .innervebtns {
+    padding: 5%;
+}
+
+#homepage .innervebtn {
+    width: 70%;
+    height: 20%;
+    font-size: 1.3rem;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -100%);
+}
+
+.registerbtn {
+    margin-top: 10px;
+}
+
+.knowbtn {
+    margin-bottom: 10px;
+}
+
+.main-timeline .timeline {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.main-timeline .timeline .timeline-content,
+.main-timeline .timeline:nth-child(even) .timeline-content {
+    padding: 45px 20px 20px;
+}
+
+.main-timeline .timeline .timeline-icon,
+.main-timeline .timeline:nth-child(even) .timeline-icon {
+    font-size: 28px;
+    left: 50%;
+    top: -39px;
+    right: auto;
+    transform: translateY(0) translateX(-50%);
+}
+
+.main-timeline .timeline .timeline-icon:before,
+.main-timeline .timeline .timeline-icon:after {
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%) translateX(0);
+}
+
+.main-timeline .timeline .timeline-icon:after {
+    left: calc(100% + 6px);
+}
+
+@media screen and (max-width: 576px) {
+    .main-timeline .title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .our-team {
+        margin-bottom: 30px;
+    }
+}
+
+.material-card.mc-active {
+    padding-bottom: 0;
+    height: auto;
+}
+
+.material-card.mc-active .mc-content {
+    position: relative;
+    margin-right: 16px;
+}
+
+.material-card.mc-active .mc-description {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    padding: 50px 30px 70px 30px;
+    bottom: 0;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.section__container {
+    display: block;
+}
+
+.section__header {
+    margin: 0 0 40px;
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .controller {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 55vh;
+        left: 11vh;
+        z-index: 100;
+        width: 20vw;
+        height: 30vh;
+        margin-left: -75px;
+        font-size: 0;
+    }
+}
