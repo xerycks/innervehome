@@ -2,102 +2,817 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Innerve 5</title>
-    <!-- Fullpage.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <!--fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Swiper.js-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./assets/css/home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Innerve 5</title>
+  <!-- Fullpage.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/4b33ceaf3d.js" crossorigin="anonymous"></script>
+
+  <!-- Swiper.js-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./assets/css/mobile.css" />
 </head>
 
 <body>
-    <div id="fullpage">
-        <!-- Home -->
-        <section class="section" id="homepage">
-            <div class=" row homecontainer">
-                <div class="homepng col-lg-5 col-md-12">
-                    <img id="homepng" src="./assets/homeicon.svg" alt="">
+  
+  <div class="cursor"></div>
+  
+  <!-- Home -->
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  
+  
+    <div class="demo">
+      <div class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+  
+        </div>
+      </div>
+    </div>
+
+  <section class="section" id="homepage">
+    <div class="homerow">
+      <div class="homeicon">
+        <img src="./assets/img/homeiconmain.svg" alt="bohotachhalogo">
+      </div>
+
+      <div class="innervedates">
+        <div class="innervedate">
+          <h1>Idea Pitching Last Day</h1>
+          <h3>10.09.20</h3>
+          <p>submit before this</p>
+        </div>
+
+        <div class="innervedate">
+          <h1>Result Announcement</h1>
+          <h3>25.09.20</h3>
+          <p>Finger Crossed</p>
+        </div>
+
+        <div class="innervedate">
+          <h1>24hrs Hackathon Day</h1>
+          <h3>10.10.20</h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Home -->
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="title">
+      <div class="text">
+        <div class="wavy">
+          <span style="--i:1;">A</span>
+          <span style="--i:2;">B</span>
+          <span style="--i:3;">O</span>
+          <span style="--i:4;">U</span>
+          <span style="--i:5;">T</span>
+          <span style="--i:5;"> </span>
+          <span style="--i:6;">T</span>
+          <span style="--i:7;">H</span>
+          <span style="--i:8;">E</span>
+          <span style="--i:8;"> </span>
+          <span style="--i:9;">E</span>
+          <span style="--i:10;">V</span>
+          <span style="--i:11;">E</span>
+          <span style="--i:12;">N</span>
+          <span style="--i:13;">T</span>
+        </div>
+      </div>
+    </div>
+    <div class="home-more-stuff">
+      <div class="more-stuff-grid">
+        <p class="slide-in from-left about-main">
+          InNerve 5.0 provides its participants the opportunity to to delve
+          into the real world problem and find efficient and economical solutions.
+          this time we are back with more brain storming problem statements.
+          It is a 24 hour hackathon that promotes technical skills among
+          the undergraduate students.Get ready to innovate,create and acccomplish.<br>
+          Eligibility&nbsp;:&nbsp;Any student currently pursuing their undergraduate education.
+        </p>
+
+      </div>
+      <div class="container-btn">
+        <div class="btn cta"><a href="assets\participant.pdf" target="blank">brochure</a></div>
+      </div>
+    </div>
+    <div class="container-svg">
+      <div class="shape">
+        <svg id="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+          viewBox="0 0 863.67584 787.45556">
+          <title></title>
+          <rect x="674.64346" y="434.39412" width="2" height="140" fill="#f2f2f2" />
+          <rect x="674.64346" y="281.39412" width="2" height="140" fill="#f2f2f2" />
+          <rect x="674.64346" y="87.39412" width="2" height="140" fill="#f2f2f2" />
+          <circle cx="675.64346" cy="434.39412" r="25" fill="#f2f2f2" />
+          <circle cx="675.64346" cy="267.39412" r="47" fill="#f2f2f2" />
+          <circle cx="675.64346" cy="87.39412" r="63" fill="#f2f2f2" />
+          <circle cx="650.64346" cy="59.39412" r="10" fill="#d0cde1" />
+          <circle cx="690.64346" cy="81.39412" r="6" fill="#d0cde1" />
+          <circle cx="675.64346" cy="113.39412" r="6" fill="#d0cde1" />
+          <path
+            d="M558.5736,732.72005a443.16545,443.16545,0,0,1-168.1455-33.12793A356.65064,356.65064,0,0,1,194.67956,234.2889,285.75854,285.75854,0,0,1,567.183,77.58041,228.807,228.807,0,0,1,692.65905,375.84359,183.245,183.245,0,0,1,453.788,476.33431a146.79491,146.79491,0,0,1-80.502-191.35742,117.77062,117.77062,0,0,1,153.34668-64.51123,94.41622,94.41622,0,0,1,51.71875,122.938A75.64668,75.64668,0,0,1,479.7406,384.888a60.71786,60.71786,0,0,1-33.29786-79.14941A48.831,48.831,0,0,1,510.02331,278.991a39.264,39.264,0,0,1,21.50781,51.125,31.612,31.612,0,0,1-41.16064,17.31641,25.4898,25.4898,0,0,1-13.9624-33.19,20.59,20.59,0,0,1,26.812-11.27929,16.67345,16.67345,0,0,1,9.1333,21.71,13.5396,13.5396,0,0,1-17.62891,7.4165,11.03155,11.03155,0,0,1-6.043-14.36377,9.02471,9.02471,0,0,1,11.752-4.94384,7.42021,7.42021,0,0,1,4.06445,9.66211,6.13434,6.13434,0,0,1-7.99023,3.36132,5.10967,5.10967,0,0,1-2.79883-6.65283,4.283,4.283,0,0,1,5.583-2.34863,3.62962,3.62962,0,0,1,1.98877,4.72705,3.10075,3.10075,0,0,1-4.043,1.70019,2.67971,2.67971,0,0,1-1.46924-3.49462,2.34588,2.34588,0,0,1,.52344-.78467,2.2689,2.2689,0,0,0-.73145.95556,3.10864,3.10864,0,0,0,1.70215,4.04639,4.13478,4.13478,0,0,0,5.38379-2.26465,5.41865,5.41865,0,0,0-2.96826-7.05566,7.02632,7.02632,0,0,0-9.145,3.84717,9.0309,9.0309,0,0,0,4.94629,11.75732,11.54031,11.54031,0,0,0,15.02246-6.31982,14.67283,14.67283,0,0,0-8.03662-19.10352,18.58956,18.58956,0,0,0-24.20557,10.18262,23.4616,23.4616,0,0,0,12.86572,30.583,29.61209,29.61209,0,0,0,38.5542-16.21924,37.26339,37.26339,0,0,0-20.41113-48.51856,46.83052,46.83052,0,0,0-60.97412,25.65088A58.718,58.718,0,0,0,480.49548,383.036a73.64788,73.64788,0,0,0,96.00439-40.38721A92.41557,92.41557,0,0,0,525.8778,222.31722a115.77022,115.77022,0,0,0-150.74023,63.41455,144.79736,144.79736,0,0,0,79.40527,188.751,181.24485,181.24485,0,0,0,236.26465-99.394A226.80605,226.80605,0,0,0,566.4281,79.43246C421.5448,20.35384,255.60974,90.161,196.53112,235.04378,122.63122,416.27523,209.952,623.84017,391.183,697.74056c226.666,92.42676,486.269-16.78515,578.69678-243.45215l1.85156.75586A446.43912,446.43912,0,0,1,564.39,732.68294C562.45153,732.70736,560.50915,732.72005,558.5736,732.72005ZM497.93982,320.27718a.3519.3519,0,0,0-.13428.02735.34584.34584,0,0,0-.18555.1875.6803.6803,0,0,0,.37305.8872,1.10164,1.10164,0,0,0,1.436-.603,1.62634,1.62634,0,0,0-.7207-2.03858l-.63916,1.56543A.33875.33875,0,0,0,497.93982,320.27718Z"
+            transform="translate(-168.16208 -56.27222)" fill="#3f3d56" />
+          <circle cx="489.56553" cy="232.87527" r="49.53794" fill="#2f2e41" />
+          <polygon points="544.143 380.894 550.143 399.894 472.143 411.894 473.143 391.894 544.143 380.894"
+            fill="#a0616a" />
+          <path d="M621.30554,585.16634l-3,61s-17,31-15,75,1,45,1,45l-1,16,16,2v-21s23-58,25-87l23-87Z"
+            transform="translate(-168.16208 -56.27222)" fill="#a0616a" />
+          <path d="M734.30554,585.16634l3,61s17,31,15,75-1,45-1,45l1,16-16,2v-21s-23-58-25-87l-23-87Z"
+            transform="translate(-168.16208 -56.27222)" fill="#a0616a" />
+          <path
+            d="M718.30554,450.16634s-72,11-83,8l-36,125s33,13,73,9a34.86506,34.86506,0,0,1,24,4c12,7,48-12,48-12l25-5Z"
+            transform="translate(-168.16208 -56.27222)" fill="#2f2e41" />
+          <rect x="496.64953" y="407.40309" width="80" height="91" fill="#6c63ff" />
+          <rect x="484.63738" y="417.38516" width="80" height="91" fill="#f2f2f2" />
+          <path d="M605.30554,389.16634l-1,14,18,62s7,44,21,70c0,0,8,40,23,35s-7-44-7-44l-16-60-19-79Z"
+            transform="translate(-168.16208 -56.27222)" fill="#a0616a" />
+          <circle cx="493.64346" cy="250.39412" r="30" fill="#a0616a" />
+          <path
+            d="M644.30554,324.16634s9,27-9,32-36,16-32,34l2,4,125-30a27.43931,27.43931,0,0,0-27-13s-27.807-.73647-25.9035-18.86823l-3.0965-7.13177Z"
+            transform="translate(-168.16208 -56.27222)" fill="#a0616a" />
+          <path
+            d="M726.30554,362.16634s5,0,18,17,22,26,22,26,12,6,5,20-32,28-32,28-25,30-28,15,21-23,21-23,18-17,17-27l-41-34Z"
+            transform="translate(-168.16208 -56.27222)" fill="#a0616a" />
+          <path
+            d="M601.30554,387.16634s124-29,127-29l6.29076,9.74735s-1.29076,7.25265-16.29076,9.25265c0,0,3,15-3,30v37s-70,8-76,14l-10.77042-53.41383s-14.22958-8.58617-24.22958-1.58617C604.30554,403.16634,600.30554,390.16634,601.30554,387.16634Z"
+            transform="translate(-168.16208 -56.27222)" fill="#d0cde1" />
+          <path
+            d="M621.30554,780.16634s-10.39523-12.67627-17.69762-2.83814l-9.30238,18.83814s-26,44,1,47,29-7,29-7-2-12,0-14,4-3,4-7S621.30554,780.16634,621.30554,780.16634Z"
+            transform="translate(-168.16208 -56.27222)" fill="#2f2e41" />
+          <path
+            d="M734.30554,780.16634s10.39523-12.67627,17.69761-2.83814l9.30239,18.83814s26,44-1,47-29-7-29-7,2-12,0-14-4-3-4-7S734.30554,780.16634,734.30554,780.16634Z"
+            transform="translate(-168.16208 -56.27222)" fill="#2f2e41" />
+          <circle cx="444.24359" cy="197.03931" r="14.75598" fill="#2f2e41" />
+          <circle cx="534.88747" cy="192.82332" r="14.75598" fill="#2f2e41" />
+          <path
+            d="M687.23958,242.77155a14.75567,14.75567,0,0,1,13.175-14.66875,14.756,14.756,0,1,0,0,29.3375A14.75567,14.75567,0,0,1,687.23958,242.77155Z"
+            transform="translate(-168.16208 -56.27222)" fill="#2f2e41" />
+          <path
+            d="M595.91815,265.24737a14.75566,14.75566,0,0,1-.85541-19.69824,14.756,14.756,0,1,0,20.53211,20.95521A14.75566,14.75566,0,0,1,595.91815,265.24737Z"
+            transform="translate(-168.16208 -56.27222)" fill="#2f2e41" />
+          <path
+            d="M657.72762,265.95952c-17.46323,0-31.62,8.2581-31.62,18.445,0,4.558,2.84561,8.72379,7.5428,11.942l6.08719-4.4106-1.65536,6.90973c.68686.31831,1.3882.62639,2.1197.91112l9.09364-10.60927V302.181a53.08232,53.08232,0,0,0,8.432.66846c17.46322,0,31.62-8.2581,31.62-18.445S675.19084,265.95952,657.72762,265.95952Z"
+            transform="translate(-168.16208 -56.27222)" fill="#2f2e41" />
+          <path d="M688.29358,249.09554s-2.29174,10.54,12.02911,14.756" transform="translate(-168.16208 -56.27222)"
+            fill="#6c63ff" />
+          <path d="M626.10766,251.0139s5.27,11.78362-10.54,17.05362" transform="translate(-168.16208 -56.27222)"
+            fill="#6c63ff" />
+          <ellipse cx="632.30554" cy="312.66634" rx="2.5" ry="6"
+            transform="translate(-229.04187 125.76243) rotate(-15.63946)" fill="#a0616a" />
+          <ellipse cx="692.30554" cy="307.66634" rx="6" ry="2.5"
+            transform="translate(174.50243 923.47797) rotate(-86.47577)" fill="#a0616a" />
+          <rect x="783.64953" y="297.40309" width="80" height="91" fill="#6c63ff" />
+          <rect x="204.64953" y="118.40309" width="80" height="91" fill="#6c63ff" />
+          <path
+            d="M1023.77819,455.69173l-82-.04882.05469-92.99952,82,.04737Zm-79.998-2.04687,78,.04492.05078-89-78-.04541Z"
+            transform="translate(-168.16208 -56.27222)" fill="#3f3d56" />
+          <rect x="218.64346" y="134.39412" width="52" height="6" fill="#f2f2f2" />
+          <rect x="218.64346" y="151.39412" width="52" height="6" fill="#f2f2f2" />
+          <rect x="218.64346" y="168.39412" width="52" height="6" fill="#f2f2f2" />
+          <path
+            d="M467.77917,253.69076l-82-.04737.05371-93,81.99951.04737Zm-79.999-2.04639,78,.04541.05127-89-77.99952-.04541Z"
+            transform="translate(-168.16208 -56.27222)" fill="#3f3d56" />
+          <rect x="22.64953" y="457.40309" width="80" height="91" fill="#f2f2f2" />
+          <rect x="36.64346" y="478.39412" width="52" height="44" fill="#3f3d56" />
+          <path
+            d="M285.77917,592.69173l-82-.04882.05371-93,81.99951.04882Zm-79.999-2.04687,78,.04492.05127-89-77.99952-.04492Z"
+            transform="translate(-168.16208 -56.27222)" fill="#3f3d56" />
+          <circle cx="62.64346" cy="500.39412" r="12" fill="#6c63ff" />
+        </svg>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-12">
+          <div class="main-timeline">
+            <div class="timeline">
+              <a href="#" class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-globe"></i>
                 </div>
-                <div class="head col-lg-7">
-                    <div class="headcontainer">
-                        <svg id="innervename" width="315" height="31" viewBox="0 0 315 31" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.871826 1.3L7.51383 1.3L7.51383 30H0.871826L0.871826 1.3Z" stroke="white" />
-                            <path
-                                d="M45.5669 1.3V30H40.114L25.8049 12.575V30H19.2449V1.3L24.739 1.3L39.007 18.725V1.3L45.5669 1.3Z"
-                                stroke="white" />
-                            <path
-                                d="M83.5993 1.3V30H78.1463L63.8372 12.575V30H57.2773V1.3L62.7713 1.3L77.0393 18.725V1.3L83.5993 1.3Z"
-                                stroke="white" />
-                            <path
-                                d="M117.532 24.67V30L95.3096 30V1.3L116.999 1.3V6.63L101.911 6.63V12.862L115.236 12.862V18.028H101.911V24.67H117.532Z"
-                                stroke="white" />
-                            <path
-                                d="M146.022 30L140.487 22.005H140.159H134.378V30H127.736V1.3L140.159 1.3C142.701 1.3 144.902 1.72367 146.76 2.571C148.646 3.41833 150.095 4.621 151.106 6.179C152.118 7.737 152.623 9.582 152.623 11.714C152.623 13.846 152.104 15.691 151.065 17.249C150.054 18.7797 148.605 19.955 146.719 20.775L153.156 30H146.022ZM145.899 11.714C145.899 10.1013 145.38 8.87133 144.341 8.024C143.303 7.14933 141.786 6.712 139.79 6.712L134.378 6.712V16.716H139.79C141.786 16.716 143.303 16.2787 144.341 15.404C145.38 14.5293 145.899 13.2993 145.899 11.714Z"
-                                stroke="white" />
-                            <path
-                                d="M190.399 1.3L177.976 30H171.416L159.034 1.3L166.209 1.3L174.942 21.8L183.798 1.3L190.399 1.3Z"
-                                stroke="white" />
-                            <path
-                                d="M219.937 24.67V30H197.715V1.3L219.404 1.3V6.63L204.316 6.63V12.862L217.641 12.862V18.028H204.316V24.67H219.937Z"
-                                stroke="white" />
-                            <path
-                                d="M254.709 12.083C258.755 12.083 261.734 12.8893 263.647 14.502C265.588 16.1147 266.558 18.274 266.558 20.98C266.558 22.7293 266.121 24.3283 265.246 25.777C264.372 27.1983 263.032 28.3463 261.228 29.221C259.452 30.0683 257.251 30.492 254.627 30.492C252.605 30.492 250.609 30.2323 248.641 29.713C246.701 29.1663 245.047 28.401 243.68 27.417L246.304 22.333C247.398 23.153 248.655 23.7953 250.076 24.26C251.498 24.6973 252.96 24.916 254.463 24.916C256.131 24.916 257.443 24.588 258.399 23.932C259.356 23.276 259.834 22.3603 259.834 21.185C259.834 19.955 259.329 19.0257 258.317 18.397C257.333 17.7683 255.611 17.454 253.151 17.454H245.812L247.288 1.3L264.795 1.3V6.63H252.823L252.372 12.083H254.709Z"
-                                stroke="white" />
-                            <path
-                                d="M277.945 30.328C276.824 30.328 275.881 29.9453 275.116 29.18C274.351 28.4147 273.968 27.458 273.968 26.31C273.968 25.1347 274.351 24.1917 275.116 23.481C275.881 22.743 276.824 22.374 277.945 22.374C279.066 22.374 280.009 22.743 280.774 23.481C281.539 24.1917 281.922 25.1347 281.922 26.31C281.922 27.458 281.539 28.4147 280.774 29.18C280.009 29.9453 279.066 30.328 277.945 30.328Z"
-                                stroke="white" />
-                            <path
-                                d="M301.603 30.492C299.225 30.492 297.107 29.9043 295.248 28.729C293.389 27.5537 291.927 25.859 290.861 23.645C289.822 21.4037 289.303 18.7387 289.303 15.65C289.303 12.5613 289.822 9.91 290.861 7.696C291.927 5.45467 293.389 3.74633 295.248 2.571C297.107 1.39567 299.225 0.807999 301.603 0.807999C303.981 0.807999 306.099 1.39567 307.958 2.571C309.817 3.74633 311.265 5.45467 312.304 7.696C313.37 9.91 313.903 12.5613 313.903 15.65C313.903 18.7387 313.37 21.4037 312.304 23.645C311.265 25.859 309.817 27.5537 307.958 28.729C306.099 29.9043 303.981 30.492 301.603 30.492ZM301.603 24.875C303.352 24.875 304.719 24.1233 305.703 22.62C306.714 21.1167 307.22 18.7933 307.22 15.65C307.22 12.5067 306.714 10.1833 305.703 8.68C304.719 7.17666 303.352 6.425 301.603 6.425C299.881 6.425 298.514 7.17666 297.503 8.68C296.519 10.1833 296.027 12.5067 296.027 15.65C296.027 18.7933 296.519 21.1167 297.503 22.62C298.514 24.1233 299.881 24.875 301.603 24.875Z"
-                                stroke="white" />
-                        </svg>
-                        <h1>Pune's Biggest Hackathon</h1>
-                        <span>
-                            <p>Schedule to be announced soon ! </p>
-                        </span>
-                    </div>
-                </div>
+                <h3 class="title">Web Designing</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
+                  condimentum neque commodo
+                </p>
+              </a>
             </div>
-            <div class="row">
-                <div class="innerveprize col-6">
-                    <svg class="prizerect" width="500" height="280" viewBox="0 0 250 125" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.5 0.5H249.5V124.5H0.5V0.5Z" stroke="black" />
-                    </svg>
-                    <h2>Prizes Worth 7 lac+ <br> Winner gets 1 lac Cash</h2>
-
-
+            <div class="timeline">
+              <a href="#" class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-rocket"></i>
                 </div>
-                <div class="innervebtns col-6">
-                    <button class="innervebtn knowbtn">KNOW MORE</button>
-                    <button class="innervebtn registerbtn">REGISTER</button>
-                </div>
+                <h3 class="title">Web Development</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
+                  condimentum neque commodo
+                </p>
+              </a>
             </div>
+            <div class="timeline">
+              <a href="#" class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-user"></i>
+                </div>
+                <h3 class="title">Java Script</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
+                  condimentum neque commodo
+                </p>
+              </a>
+            </div>
+            <div class="timeline">
+              <a href="#" class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-briefcase"></i>
+                </div>
+                <h3 class="title">Web Designing</h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
+                  condimentum neque commodo
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
 
+  <!-- Themes -->
+  <section class="section" id="themes">
+    <p id="theme_header">
+      <span>
+        Themes
+      </span>
+    </p>
+    <section class="container">
+
+      <div class="row active-with-click">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <article class="material-card Purple">
+            <h2>
+              <span>Blockchain</span>
+              <strong>
+                <i class="fa fa-fw fa-star"></i>
+                Future's Underdon
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive"
+                  src="https://images.unsplash.com/photo-1523759724146-4ce060fff7be?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=david-shares-4_41-79dHvE-unsplash.jpg" />
+              </div>
+              <div class="mc-description">
+                Blockchain is a distributed digital ledger system where transactions of various types (i.e. not only
+                monetary) between parties are recorded redundantly in a multiple of databases which are slow but
+                secure.
+
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                For More information, follow below links
+              </h4>
+              <a class="fa fa-fw fa-newspaper-o"></a>
+              <a class="fa fa-fw fa-wikipedia-w"></a>
+              <a class="fa fa-fw fa-search-plus"></a>
+              <a class="fa fa-fw fa-google"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <article class="material-card Blue">
+            <h2>
+              <span>Data Science</span>
+              <strong>
+                <i class="fa fa-fw fa-star"></i>
+                Most Underrated
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive"
+                  src="https://images.unsplash.com/photo-1530241160077-69502379a331?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=andre-spilborghs-zF5F1i6C3cs-unsplash.jpg" />
+              </div>
+              <div class="mc-description">
+                Artificial Intelligence (AI) is the branch of computer sciences that emphasizes the development of
+                intelligence machines, thinking and working like humans. For example, speech recognition,
+                problem-solving, learning and planning
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                For More information, follow below links
+              </h4>
+              <a class="fa fa-fw fa-newspaper-o"></a>
+              <a class="fa fa-fw fa-wikipedia-w"></a>
+              <a class="fa fa-fw fa-search-plus"></a>
+              <a class="fa fa-fw fa-google"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <article class="material-card Teal">
+            <h2>
+              <span>Automation</span>
+              <strong>
+                <i class="fa fa-fw fa-star"></i>
+                Comfort's Need
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive"
+                  src="https://images.unsplash.com/photo-1586374579358-9d19d632b6df?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=everyday-basics-pi9W2dWDdak-unsplash.jpg" />
+              </div>
+              <div class="mc-description">
+                Mission to help developers automate repetitive processes and to increase employee productivity. A
+                world of devices connected by internet opens up opportunities for us that were previously unthinkable.
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                For More information, follow below links
+              </h4>
+              <a class="fa fa-fw fa-newspaper-o"></a>
+              <a class="fa fa-fw fa-wikipedia-w"></a>
+              <a class="fa fa-fw fa-search-plus"></a>
+              <a class="fa fa-fw fa-google"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <article class="material-card Deep-Purple">
+            <h2>
+              <span>Smart City</span>
+              <strong>
+                <i class="fa fa-fw fa-star"></i>
+                Better Habitat
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive"
+                  src="https://images.unsplash.com/photo-1519010470956-6d877008eaa4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jc-gellidon-Khqmo4T-rs0-unsplash.jpg" />
+              </div>
+              <div class="mc-description">
+                We are letting the participants to take an un-orthodox approach for fast-paced growth and submit a
+                development plan for betterment of the cities. This will let the participants to understand their
+                challenges and by engaging with experts to get insights and solutions for a smarter way of developing
+                city.
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                For More information, follow below links
+              </h4>
+              <a class="fa fa-fw fa-newspaper-o"></a>
+              <a class="fa fa-fw fa-wikipedia-w"></a>
+              <a class="fa fa-fw fa-search-plus"></a>
+              <a class="fa fa-fw fa-google"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <article class="material-card Indigo">
+            <h2>
+              <span>Cyber Security</span>
+              <strong>
+                <i class="fa fa-fw fa-star"></i>
+                Hacker's Nightmare
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive"
+                  src="https://images.unsplash.com/photo-1573495628363-04667cedc587?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=christina-wocintechchat-com-5UHFPbvBBzY-unsplash.jpg" />
+              </div>
+              <div class="mc-description">
+                Develop next generation security apps right from SCRATCH or based on the -CONTROL: A cryptographic
+                Digital Control Platform. Participants will be provided access to -SDK and -ADAPTER with API with
+                documentation which can help build security apps 2.0.
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                For More information, follow below links
+              </h4>
+              <a class="fa fa-fw fa-newspaper-o"></a>
+              <a class="fa fa-fw fa-wikipedia-w"></a>
+              <a class="fa fa-fw fa-search-plus"></a>
+              <a class="fa fa-fw fa-google"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <article class="material-card Blue">
+            <h2>
+              <span>Heath Care</span>
+              <strong>
+                <i class="fa fa-fw fa-star"></i>
+                Life's purpose
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive"
+                  src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=tyler-nix-Y1drF0Y3Oe0-unsplash.jpg" />
+              </div>
+              <div class="mc-description">
+                Looking at Healthcare in a completely new way - focusing on earlier, pre-symptomatic disease detection
+                and prevention, instead of late diagnosis - helping clinicians access more information and intervene
+                sooner with targeted treatments so their patients can lead longer, fuller lives.
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fa fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                For More information, follow below links
+              </h4>
+              <a class="fa fa-fw fa-newspaper-o"></a>
+              <a class="fa fa-fw fa-wikipedia-w"></a>
+              <a class="fa fa-fw fa-search-plus"></a>
+              <a class="fa fa-fw fa-google"></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sponsors -->
+        <section class="section" id="sponsors" style="z-index: 1000;">
+          <h1 class="header">SPONSORS</h1>
         </section>
-        <!-- Home -->
+    </section>
+
+    <!-- Sponsors -->
+    <section class="section" id="sponsors">
+      <h1>SPONSORS</h1>
+    </section>
+    <!-- Sponsors -->
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('assets/img/1.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('assets/img/2.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('assets/img/6.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('assets/img/11.jpg');"></div>
+          <div class="swiper-slide" style="background-image: url('assets/img/1.jpg');"></div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+
+    <!-- Contact -->
+    <section class="section" id="Contact">
+      <h1>CONTACT</h1>
+      <div class="container">
+        <div class="row team">
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="./assets/img/team/Akshay_sir.jpg" alt="team member" class="img-responsive">
+              </div>
+              <div class="content">
+                <h3 class="title">Akshay Sharma</h3>
+                <span class="post">Web Developer</span>
+                <ul class="social">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="./assets/img/team/Satya Sir.jpg" alt="team member" class="img-responsive">
+              </div>
+              <div class="content">
+                <h3 class="title">Satya Prakash</h3>
+                <span class="post">Web Developer</span>
+                <ul class="social">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="./assets/img/team/Deepshikha Mam.jpg" alt="team member" class="img-responsive">
+              </div>
+              <div class="content">
+                <h3 class="title">Deepshikha Tripathi </h3>
+                <span class="post">Web Developer</span>
+                <ul class="social">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="./assets/img/team/Akshay_sir.jpg" alt="team member" class="img-responsive">
+              </div>
+              <div class="content">
+                <h3 class="title">Akshay Sharma</h3>
+                <span class="post">Web Developer</span>
+                <ul class="social">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="./assets/img/team/Satya Sir.jpg" alt="team member" class="img-responsive">
+              </div>
+              <div class="content">
+                <h3 class="title">Satya Prakash</h3>
+                <span class="post">Web Developer</span>
+                <ul class="social">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="./assets/img/team/Deepshikha Mam.jpg" alt="team member" class="img-responsive">
+              </div>
+              <div class="content">
+                <h3 class="title">Deepshikha Tripathi </h3>
+                <span class="post">Web Developer</span>
+                <ul class="social">
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <div id="creator">
+      <h1><code>Creators</code></h1>
+
+      <div class="sqrs">
+        <div class="sqr"
+          style="--img: url(https://avatars3.githubusercontent.com/u/54761473?s=400&u=70ff584a841f0748305e405fe3db9eca5ddd2608&v=4);">
+        </div>
+
+        <div class="sqr"
+          style="--img: url(https://avatars0.githubusercontent.com/u/54790525?s=400&u=b50960a6416302bfff7eaa221cb93cedab8c075e&v=4)">
+        </div>
+
+        <div class="sqr"
+          style="--img: url(https://images.unsplash.com/photo-1582565245597-1d14b23c5647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1339&q=80)">
+        </div>
+
+        <div class="sqr"
+          style="--img: url(https://avatars2.githubusercontent.com/u/54761358?s=400&u=8999797f2fcb6d9029c382af31f091af7394be09&v=4)">
+        </div>
 
 
-        <!-- Jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <div class="sqr"
+          style="--img: url(https://avatars0.githubusercontent.com/u/56212029?s=400&u=16cbc5612a9328c2ed3ae1c1ffce8779bf866e55&v=4)">
+        </div>
+      </div> 
 
-        <!-- Apni khud ki JS file -->
-        <script src="./main.js"></script>
+    <!--Creater section-->
+     </div>
+    <div class="row createrNew">
+      <div class="card col-md-4">
+        <div class="imgBox">
+          <img style="width: 310px; height: 300px;"
+            src="https://avatars3.githubusercontent.com/u/54761473?s=400&u=70ff584a841f0748305e405fe3db9eca5ddd2608&v=4)">
+        </div>
+        <div class="details">
+          <h1>Nishu Rai</h1>
+        </div>
+      </div>
+      <div class="card col-md-4">
+        <div class="imgBox">
+          <img style="width: 310px; height: 300px;"
+            src="https://avatars0.githubusercontent.com/u/54790525?s=400&u=b50960a6416302bfff7eaa221cb93cedab8c075e&v=4">
+        </div>
+        <div class="details">
+          <h1>Kumari Palak</h1>
+        </div>
+      </div>
+      <div class="card col-md-4">
+        <div class="imgBox">
+          <img style="width: 310px; height: 300px;"
+            src="https://images.unsplash.com/photo-1582565245597-1d14b23c5647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1339&q=80">
+        </div>
+        <div class="details">
+          <h1> Aman Singh</h1>
+        </div>
+      </div>
+      <div class="card col-md-4">
+        <div class="imgBox">
+          <img style="width: 310px; height: 300px;"
+            src="https://avatars2.githubusercontent.com/u/54761358?s=400&u=8999797f2fcb6d9029c382af31f091af7394be09&v=4">
+        </div>
+        <div class="details">
+          <h1>Snehasis Sahoo</h1>
+        </div>
+      </div>
+      <div class="card col-md-4">
+        <div class="imgBox">
+          <img style="width: 310px; height: 300px;"
+            src="https://avatars0.githubusercontent.com/u/56212029?s=400&u=16cbc5612a9328c2ed3ae1c1ffce8779bf866e55&v=4">
+        </div>
+        <div class="details">
+          <h1>Rishub Rathore</h1>
+        </div>
+      </div>
+    </div>
+    </div>
 
 
-        <!-- Fullpage js minified -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
-            integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+    <!-- Contact -->
+
+    <section id="contactus">
+      <h1>Contact us for any query , any-time</h1>
+      <p style="font-family: 'AvenirLTStd-Medium'; color: gray;">We are always here to help you</p>
+      <div class="contacts">
+
+
+        <div class="contactbox">
+          <a style="text-decoration: none;" href="https://instagram.com/innerve24hrs">
+            <div class="contactbtn">
+              <i class="fab fa-whatsapp fa-3x"></i>
+              <p>Whatsapp</p>
+              <p>Replies faster than your crush.<br>
+                Only ask queries.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contactbox">
+          <a style="text-decoration: none;" href="https://instagram.com/innerve24hrs">
+            <div class="contactbtn">
+              <i class=" insta fab fa-instagram fa-3x"></i>
+              <p>Instagram</p>
+              <p>Follow us for memes and information<br>
+                Can also DM for queries.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contactbox">
+          <a style="text-decoration: none;" href="https://github.com/aitoss">
+            <div class="contactbtn">
+              <i class=" github fab fa-github fa-3x"></i>
+              <p>GitHub</p>
+              <p>We post all of our code-cool stuff here. <br>
+                Feel free to fork from here.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contactbox">
+          <a style="text-decoration: none;" href="https://www.linkedin.com/company/open-source-software-club/">
+            <div class="contactbtn">
+              <i class="linkedin fab fa-linkedin fa-3x"></i>
+              <p>LinkedIn</p>
+              <p>Connect with us and increase you cirlce.<br>
+                It's always better to do so.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contactbox">
+          <a style="text-decoration: none;" href="mailto: innerve24hrs@gmail.com">
+            <div class="contactbtn">
+              <i class="far fa-envelope fa-3x"></i>
+              <p>E-mail Us</p>
+              <p>Feel free to email any query any-time.<br>
+                We prefer Insta-DM btw.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contactbox">
+          <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
+            <div class="contactbtn">
+              <i class="fab fa-facebook fa-3x"></i>
+              <p>Facebook</p>
+              <p>Like our page for future updates.<br>
+                There are memes too.</p>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="contactbox">
+          <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
+            <div class="contactbtn">
+              <i class="fab fa-twitter fa-3x"></i>
+              <p>Twitter</p>
+              <p>We do not tweet that much, but<br>
+                when we do it's epic</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contactbox">
+          <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
+            <div class="contactbtn">
+              <i class="fab fa-telegram fa-3x"></i>
+              <p>Telegram</p>
+              <p>Group for developers, by developers.<br>
+                Free courses and more.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <!-- Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/victor/1.1.0/victor.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tweakpane@1.3.2/dist/tweakpane.min.js"></script>
+
+
+    <!-- Apni khud ki JS file -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/observers.js"></script>
+
+    <!-- test scripts -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+
+
 </body>
 
 </html>
