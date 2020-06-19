@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Innerve 5</title>
   <!-- Fullpage.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
@@ -18,10 +17,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
   <script src="https://kit.fontawesome.com/4b33ceaf3d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700" />
 
   <!-- Swiper.js-->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
   <!-- CSS -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet">
@@ -30,50 +31,94 @@
 </head>
 
 <body>
-  
+
+
   <div class="cursor"></div>
-  
+
   <!-- Home -->
   <div id='stars'></div>
   <div id='stars2'></div>
   <div id='stars3'></div>
-  
-  
-    <div class="demo">
-      <div class="content">
-        <div id="large-header" class="large-header">
-          <canvas id="demo-canvas"></canvas>
-  
-        </div>
+
+
+  <div class="demo">
+    <div class="content">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+
       </div>
     </div>
+  </div>
 
   <section class="section" id="homepage">
-    <div class="homerow">
-      <div class="homeicon">
+
+    <div class="row homeinfo">
+
+      <div class="col-lg-6 homeicon">
         <img src="./assets/img/homeiconmain.svg" alt="bohotachhalogo">
       </div>
 
-      <div class="innervedates">
-        <div class="innervedate">
-          <h1>Idea Pitching Last Day</h1>
-          <h3>10.09.20</h3>
-          <p>submit before this</p>
-        </div>
+      <div class="col-lg-6 innerveinfo">
+        <div class="infohead">
+          <h2>Pune's Biggest</h2>
+          <!-- <h1>HACKATHON</h1> -->
+          <div class="homesvghack">
+            <svg id="hacksvg" width="575" height="62" viewBox="0 0 575 62" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M55.1091 2.65199V60H37.1271V37.644H20.0361V60H2.05408V2.65199H20.0361V23.307H37.1271V2.65199H55.1091Z"
+                stroke="white" stroke-width="2.6" mask="url(#path-1-outside-1)" />
+              <path
+                d="M104.024 51.333H84.9076L82.0726 60H63.1996L84.1786 2.65199H104.915L125.813 60H106.859L104.024 51.333ZM99.6496 37.806L94.4656 21.849L89.2816 37.806H99.6496Z"
+                stroke="white" stroke-width="2.6" mask="url(#path-1-outside-1)" />
+              <path
+                d="M132.328 31.245C132.328 25.575 133.462 20.526 135.73 16.098C138.052 11.67 141.346 8.24099 145.612 5.81099C149.878 3.32699 154.9 2.08499 160.678 2.08499C165.646 2.08499 170.074 3.02999 173.962 4.91999C177.904 6.75599 181.09 9.37499 183.52 12.777C186.004 16.179 187.651 20.148 188.461 24.684H169.507C168.643 22.794 167.401 21.336 165.781 20.31C164.215 19.23 162.406 18.69 160.354 18.69C157.33 18.69 154.927 19.824 153.145 22.092C151.417 24.36 150.553 27.411 150.553 31.245C150.553 35.079 151.417 38.13 153.145 40.398C154.927 42.666 157.33 43.8 160.354 43.8C162.406 43.8 164.215 43.287 165.781 42.261C167.401 41.181 168.643 39.696 169.507 37.806H188.461C187.651 42.342 186.004 46.311 183.52 49.713C181.09 53.115 177.904 55.761 173.962 57.651C170.074 59.487 165.646 60.405 160.678 60.405C154.9 60.405 149.878 59.19 145.612 56.76C141.346 54.276 138.052 50.82 135.73 46.392C133.462 41.964 132.328 36.915 132.328 31.245Z"
+                stroke="white" stroke-width="2.6" mask="url(#path-1-outside-1)" />
+              <path
+                d="M233.653 60L216.967 35.133V60H198.985V2.65199H216.967V26.79L233.41 2.65199H253.741L233.977 30.111L255.037 60H233.653Z"
+                stroke="white" stroke-width="2.6" mask="url(#path-1-outside-1)" />
+              <path
+                d="M300.955 51.333H281.839L279.004 60H260.131L281.11 2.65199H301.846L322.744 60H303.79L300.955 51.333ZM296.581 37.806L291.397 21.849L286.213 37.806H296.581Z"
+                stroke="white" stroke-width="2.6" mask="url(#path-1-outside-1)" />
+              <path d="M375.915 2.65199V16.908H360.687V60H342.705V16.908H327.639V2.65199H375.915Z" stroke="white"
+                stroke-width="2.6" mask="url(#path-1-outside-1)" />
+              <path
+                d="M437.897 2.65199V60H419.915V37.644H402.824V60H384.842V2.65199H402.824V23.307H419.915V2.65199H437.897Z"
+                stroke="white" stroke-width="2.6" mask="url(#path-1-outside-1)" />
+              <path
+                d="M477.983 60.567C472.583 60.567 467.615 59.298 463.079 56.76C458.597 54.222 455.033 50.712 452.387 46.23C449.741 41.748 448.418 36.699 448.418 31.083C448.418 25.467 449.741 20.418 452.387 15.936C455.033 11.454 458.597 7.97099 463.079 5.48699C467.615 2.94899 472.583 1.67999 477.983 1.67999C483.383 1.67999 488.324 2.94899 492.806 5.48699C497.288 7.97099 500.825 11.454 503.417 15.936C506.063 20.418 507.386 25.467 507.386 31.083C507.386 36.699 506.063 41.748 503.417 46.23C500.825 50.712 497.261 54.222 492.725 56.76C488.243 59.298 483.329 60.567 477.983 60.567ZM477.983 43.8C481.547 43.8 484.301 42.666 486.245 40.398C488.189 38.076 489.161 34.971 489.161 31.083C489.161 27.141 488.189 24.036 486.245 21.768C484.301 19.446 481.547 18.285 477.983 18.285C474.365 18.285 471.584 19.446 469.64 21.768C467.696 24.036 466.724 27.141 466.724 31.083C466.724 34.971 467.696 38.076 469.64 40.398C471.584 42.666 474.365 43.8 477.983 43.8Z"
+                stroke="white" stroke-width="2.6" mask="url(#path-1-outside-1)" />
+              <path d="M572.922 60H554.94L535.905 31.164V60H517.923V2.65199H535.905L554.94 31.974V2.65199H572.922V60Z"
+                stroke="white" stroke-width="2.6" mask="url(#path-1-outside-1)" />
+            </svg>
+          </div>
 
-        <div class="innervedate">
-          <h1>Result Announcement</h1>
-          <h3>25.09.20</h3>
-          <p>Finger Crossed</p>
-        </div>
 
-        <div class="innervedate">
-          <h1>24hrs Hackathon Day</h1>
-          <h3>10.10.20</h3>
-          <p></p>
+          <div class="infodates">
+            <h1>Round 1 - Idea Pitching</h1>
+            <p>Inside Pune Team - On 15 & 16 Sept.</p>
+            <p>Outside Pune Teams - Before 20 Sept.</p>
+
+            <h1>24hrs Hackathon - 10.10.2020</h1>
+          </div>
+
+          <div class="homebtns">
+            <button class="homebtn ">Register</button>
+            <a href="#about">
+              <button class="homebtn ">Know More</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="prizes">
+      <h1>First Prize - 1 lac Cash</h1>
+      <h1>Second Prize - 50k Cash</h1>
+      <p>and many more crazy prizes & fun experience worth 8 lac+</p>
+      <p>ALL THAT WITHOUT ANY ENTRY FEE</p>
+    </div>
+
   </section>
   <!-- Home -->
 
@@ -103,7 +148,7 @@
     <div class="home-more-stuff">
       <div class="more-stuff-grid">
         <p class="slide-in from-left about-main">
-          InNerve 5.0 provides its participants the opportunity to to delve
+          InNerve 5.0 provides its participants the opportunity to delve
           into the real world problem and find efficient and economical solutions.
           this time we are back with more brain storming problem statements.
           It is a 24 hour hackathon that promotes technical skills among
@@ -202,62 +247,77 @@
         </svg>
       </div>
     </div>
+    <!--timeline-->
+    <h1 class="tl">TIMELINE</h1>
     <div class="container">
-      <div class="row py-5">
-        <div class="col-md-12">
-          <div class="main-timeline">
-            <div class="timeline">
-              <a href="#" class="timeline-content">
-                <div class="timeline-icon">
-                  <i class="fa fa-globe"></i>
-                </div>
-                <h3 class="title">Web Designing</h3>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
-                  condimentum neque commodo
-                </p>
-              </a>
+      <div class="timeline d-flex flex-column">
+        <div id="tip"><i class="fa fa-circle " aria-hidden="true"></i></div>
+        <div class="timeline-item">
+          <div class=" start">
+            START
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="card bg-base text-white border-0">
+            <div class="card-header py-2 bg-main rounded-0 border-0">
+              Idea Presentation
             </div>
-            <div class="timeline">
-              <a href="#" class="timeline-content">
-                <div class="timeline-icon">
-                  <i class="fa fa-rocket"></i>
-                </div>
-                <h3 class="title">Web Development</h3>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
-                  condimentum neque commodo
-                </p>
-              </a>
-            </div>
-            <div class="timeline">
-              <a href="#" class="timeline-content">
-                <div class="timeline-icon">
-                  <i class="fa fa-user"></i>
-                </div>
-                <h3 class="title">Java Script</h3>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
-                  condimentum neque commodo
-                </p>
-              </a>
-            </div>
-            <div class="timeline">
-              <a href="#" class="timeline-content">
-                <div class="timeline-icon">
-                  <i class="fa fa-briefcase"></i>
-                </div>
-                <h3 class="title">Web Designing</h3>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et
-                  condimentum neque commodo
-                </p>
-              </a>
+            <div class="card-body">
+              <h5 class="card-title">September 2020</h5>
+              <p class="card-text">
+                Teams have to prepare a PPT and present their ideas.
+              </p>
             </div>
           </div>
         </div>
+        <div class="timeline-item">
+          <div class="card bg-base text-white border-0">
+            <div class="card-header py-2 bg-main rounded-0 border-0">
+              Round 1 Selection
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">end September 2020</h5>
+              <p class="card-text">
+                Results will be displayed on the official website innereve 2020.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="card bg-base text-white border-0">
+            <div class="card-header py-2 bg-main rounded-0 border-0">
+              24 hour Hackathon
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">October 2020</h5>
+              <p class="card-text">
+                Teams will implement their idea in the duration of 24 hrs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="card bg-base text-white border-0">
+            <div class="card-header py-2 bg-main rounded-0 border-0">
+              Final Result Declaration
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">October 2020</h5>
+              <p class="card-text">
+                On the next day of hackathon winners will be announced.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="end">
+            END
+          </div>
+        </div>
+        <div id="tip"><i class="fa fa-circle " aria-hidden="true"></i></div>
       </div>
     </div>
+
   </section>
   <!-- About -->
 
@@ -268,549 +328,410 @@
         Themes
       </span>
     </p>
-    <section class="container">
+    <div id="app" class="containert">
+      <card
+        data-image="https://images.unsplash.com/photo-1523759724146-4ce060fff7be?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=david-shares-4_41-79dHvE-unsplash.jpg">
+        <h1 slot="header">Blockchain</h1>
+        <p slot="content">
+          Blockchain is a distributed digital ledger system where transactions
+          of various types (i.e. not only monetary) between parties are recorded
+          redundantly in a multiple of databases which are slow but secure.
+        </p>
+      </card>
+      <card
+        data-image="https://images.unsplash.com/photo-1530241160077-69502379a331?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=andre-spilborghs-zF5F1i6C3cs-unsplash.jpg">
+        <h1 slot="header">Data Science</h1>
+        <p slot="content">
+          Artificial Intelligence (AI) is the branch of computer sciences that
+          emphasizes the development of intelligence machines, thinking and
+          working like humans. For example, speech recognition, problem-solving,
+          learning and planning
+        </p>
+      </card>
+      <card
+        data-image="https://images.unsplash.com/photo-1586374579358-9d19d632b6df?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=everyday-basics-pi9W2dWDdak-unsplash.jpg">
+        <h1 slot="header">Automation</h1>
+        <p slot="content">
+          Mission to help developers automate repetitive processes and to
+          increase employee productivity. A world of devices connected by
+          internet opens up opportunities for us that were previously
+          unthinkable.
+        </p>
+      </card>
+      <card
+        data-image="https://images.unsplash.com/photo-1519010470956-6d877008eaa4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jc-gellidon-Khqmo4T-rs0-unsplash.jpg">
+        <h1 slot="header">Smart City</h1>
+        <p slot="content">
+          We are letting the participants to take an un-orthodox approach for
+          fast-paced growth and submit a development plan for betterment of the
+          cities. This will let the participants to understand their challenges
+          and by engaging with experts to get insights and solutions for a
+          smarter way of developing city.
+        </p>
+      </card>
 
-      <div class="row active-with-click">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <article class="material-card Purple">
-            <h2>
-              <span>Blockchain</span>
-              <strong>
-                <i class="fa fa-fw fa-star"></i>
-                Future's Underdon
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive"
-                  src="https://images.unsplash.com/photo-1523759724146-4ce060fff7be?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=david-shares-4_41-79dHvE-unsplash.jpg" />
-              </div>
-              <div class="mc-description">
-                Blockchain is a distributed digital ledger system where transactions of various types (i.e. not only
-                monetary) between parties are recorded redundantly in a multiple of databases which are slow but
-                secure.
+      <card
+        data-image="https://images.unsplash.com/photo-1573495628363-04667cedc587?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=christina-wocintechchat-com-5UHFPbvBBzY-unsplash.jpg">
+        <h1 slot="header">Cyber Security</h1>
+        <p slot="content">
+          Develop next generation security apps right from SCRATCH or based on
+          the -CONTROL: A cryptographic Digital Control Platform. Participants
+          will be provided access to -SDK and -ADAPTER with API with
+          documentation which can help build security apps 2.0.
+        </p>
+      </card>
+      <card
+        data-image="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=tyler-nix-Y1drF0Y3Oe0-unsplash.jpg">
+        <h1 slot="header">Heath Care</h1>
+        <p slot="content">
+          Looking at Healthcare in a completely new way - focusing on earlier,
+          pre-symptomatic disease detection and prevention, instead of late
+          diagnosis - helping clinicians access more information and intervene
+          sooner with targeted treatments so their patients can lead longer,
+          fuller lives.
+        </p>
+      </card>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+  </section>
 
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                For More information, follow below links
-              </h4>
-              <a class="fa fa-fw fa-newspaper-o"></a>
-              <a class="fa fa-fw fa-wikipedia-w"></a>
-              <a class="fa fa-fw fa-search-plus"></a>
-              <a class="fa fa-fw fa-google"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <article class="material-card Blue">
-            <h2>
-              <span>Data Science</span>
-              <strong>
-                <i class="fa fa-fw fa-star"></i>
-                Most Underrated
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive"
-                  src="https://images.unsplash.com/photo-1530241160077-69502379a331?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=andre-spilborghs-zF5F1i6C3cs-unsplash.jpg" />
-              </div>
-              <div class="mc-description">
-                Artificial Intelligence (AI) is the branch of computer sciences that emphasizes the development of
-                intelligence machines, thinking and working like humans. For example, speech recognition,
-                problem-solving, learning and planning
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                For More information, follow below links
-              </h4>
-              <a class="fa fa-fw fa-newspaper-o"></a>
-              <a class="fa fa-fw fa-wikipedia-w"></a>
-              <a class="fa fa-fw fa-search-plus"></a>
-              <a class="fa fa-fw fa-google"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <article class="material-card Teal">
-            <h2>
-              <span>Automation</span>
-              <strong>
-                <i class="fa fa-fw fa-star"></i>
-                Comfort's Need
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive"
-                  src="https://images.unsplash.com/photo-1586374579358-9d19d632b6df?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=everyday-basics-pi9W2dWDdak-unsplash.jpg" />
-              </div>
-              <div class="mc-description">
-                Mission to help developers automate repetitive processes and to increase employee productivity. A
-                world of devices connected by internet opens up opportunities for us that were previously unthinkable.
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                For More information, follow below links
-              </h4>
-              <a class="fa fa-fw fa-newspaper-o"></a>
-              <a class="fa fa-fw fa-wikipedia-w"></a>
-              <a class="fa fa-fw fa-search-plus"></a>
-              <a class="fa fa-fw fa-google"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <article class="material-card Deep-Purple">
-            <h2>
-              <span>Smart City</span>
-              <strong>
-                <i class="fa fa-fw fa-star"></i>
-                Better Habitat
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive"
-                  src="https://images.unsplash.com/photo-1519010470956-6d877008eaa4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jc-gellidon-Khqmo4T-rs0-unsplash.jpg" />
-              </div>
-              <div class="mc-description">
-                We are letting the participants to take an un-orthodox approach for fast-paced growth and submit a
-                development plan for betterment of the cities. This will let the participants to understand their
-                challenges and by engaging with experts to get insights and solutions for a smarter way of developing
-                city.
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                For More information, follow below links
-              </h4>
-              <a class="fa fa-fw fa-newspaper-o"></a>
-              <a class="fa fa-fw fa-wikipedia-w"></a>
-              <a class="fa fa-fw fa-search-plus"></a>
-              <a class="fa fa-fw fa-google"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <article class="material-card Indigo">
-            <h2>
-              <span>Cyber Security</span>
-              <strong>
-                <i class="fa fa-fw fa-star"></i>
-                Hacker's Nightmare
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive"
-                  src="https://images.unsplash.com/photo-1573495628363-04667cedc587?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=christina-wocintechchat-com-5UHFPbvBBzY-unsplash.jpg" />
-              </div>
-              <div class="mc-description">
-                Develop next generation security apps right from SCRATCH or based on the -CONTROL: A cryptographic
-                Digital Control Platform. Participants will be provided access to -SDK and -ADAPTER with API with
-                documentation which can help build security apps 2.0.
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                For More information, follow below links
-              </h4>
-              <a class="fa fa-fw fa-newspaper-o"></a>
-              <a class="fa fa-fw fa-wikipedia-w"></a>
-              <a class="fa fa-fw fa-search-plus"></a>
-              <a class="fa fa-fw fa-google"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <article class="material-card Blue">
-            <h2>
-              <span>Heath Care</span>
-              <strong>
-                <i class="fa fa-fw fa-star"></i>
-                Life's purpose
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive"
-                  src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=tyler-nix-Y1drF0Y3Oe0-unsplash.jpg" />
-              </div>
-              <div class="mc-description">
-                Looking at Healthcare in a completely new way - focusing on earlier, pre-symptomatic disease detection
-                and prevention, instead of late diagnosis - helping clinicians access more information and intervene
-                sooner with targeted treatments so their patients can lead longer, fuller lives.
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fa fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                For More information, follow below links
-              </h4>
-              <a class="fa fa-fw fa-newspaper-o"></a>
-              <a class="fa fa-fw fa-wikipedia-w"></a>
-              <a class="fa fa-fw fa-search-plus"></a>
-              <a class="fa fa-fw fa-google"></a>
-            </div>
-          </article>
-        </div>
+  <!-- Sponsors -->
+  <section class="section" id="sponsors" style="z-index: 1000;">
+    <h1 class="header">SPONSORS</h1>
+  </section>
+  </section>
 
-        <!-- Sponsors -->
-        <section class="section" id="sponsors" style="z-index: 1000;">
-          <h1 class="header">SPONSORS</h1>
-        </section>
-    </section>
+  <!-- Sponsors -->
+  <section class="section" id="sponsors">
+    <h1>SPONSORS</h1>
+  </section>
+  <!-- Sponsors -->
 
-    <!-- Sponsors -->
-    <section class="section" id="sponsors">
-      <h1>SPONSORS</h1>
-    </section>
-    <!-- Sponsors -->
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('assets/img/1.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/2.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/6.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/11.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/1.jpg');"></div>
 
-    <!-- Gallery -->
-    <section class="section" id="gallery">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('assets/img/1.jpg');"></div>
-          <div class="swiper-slide" style="background-image: url('assets/img/2.jpg');"></div>
-          <div class="swiper-slide" style="background-image: url('assets/img/6.jpg');"></div>
-          <div class="swiper-slide" style="background-image: url('assets/img/11.jpg');"></div>
-          <div class="swiper-slide" style="background-image: url('assets/img/1.jpg');"></div>
-
-        </div>
       </div>
-    </section>
-    <!-- Gallery -->
+    </div>
+  </section>
+  <!-- Gallery -->
 
-    <!-- Contact -->
-    <section class="section" id="Contact">
-      <h1>CONTACT</h1>
-      <div class="container">
-        <div class="row team">
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="./assets/img/team/Akshay_sir.jpg" alt="team member" class="img-responsive">
-              </div>
-              <div class="content">
-                <h3 class="title">Akshay Sharma</h3>
-                <span class="post">Web Developer</span>
-                <ul class="social">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
+  <!-- Contact -->
+  <section class="section" id="Contact">
+    <h1>CONTACT</h1>
+    <div class="container">
+      <div class="row team">
+        <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="./assets/img/team/Akshay_sir.jpg" alt="team member" class="img-responsive">
             </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="./assets/img/team/Satya Sir.jpg" alt="team member" class="img-responsive">
-              </div>
-              <div class="content">
-                <h3 class="title">Satya Prakash</h3>
-                <span class="post">Web Developer</span>
-                <ul class="social">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="./assets/img/team/Deepshikha Mam.jpg" alt="team member" class="img-responsive">
-              </div>
-              <div class="content">
-                <h3 class="title">Deepshikha Tripathi </h3>
-                <span class="post">Web Developer</span>
-                <ul class="social">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
+            <div class="content">
+              <h3 class="title">Akshay Sharma</h3>
+              <span class="post">Web Developer</span>
+              <ul class="social">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="./assets/img/team/Akshay_sir.jpg" alt="team member" class="img-responsive">
-              </div>
-              <div class="content">
-                <h3 class="title">Akshay Sharma</h3>
-                <span class="post">Web Developer</span>
-                <ul class="social">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="./assets/img/team/Satya Sir.jpg" alt="team member" class="img-responsive">
+            </div>
+            <div class="content">
+              <h3 class="title">Satya Prakash</h3>
+              <span class="post">Web Developer</span>
+              <ul class="social">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+              </ul>
             </div>
           </div>
-
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="./assets/img/team/Satya Sir.jpg" alt="team member" class="img-responsive">
-              </div>
-              <div class="content">
-                <h3 class="title">Satya Prakash</h3>
-                <span class="post">Web Developer</span>
-                <ul class="social">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="./assets/img/team/Deepshikha Mam.jpg" alt="team member" class="img-responsive">
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="./assets/img/team/Deepshikha Mam.jpg" alt="team member" class="img-responsive">
-              </div>
-              <div class="content">
-                <h3 class="title">Deepshikha Tripathi </h3>
-                <span class="post">Web Developer</span>
-                <ul class="social">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
+            <div class="content">
+              <h3 class="title">Deepshikha Tripathi </h3>
+              <span class="post">Web Developer</span>
+              <ul class="social">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Contact -->
-    <div id="creator">
-      <h1><code>Creators</code></h1>
 
-      <div class="sqrs">
-        <div class="sqr"
-          style="--img: url(https://avatars3.githubusercontent.com/u/54761473?s=400&u=70ff584a841f0748305e405fe3db9eca5ddd2608&v=4);">
-        </div>
-
-        <div class="sqr"
-          style="--img: url(https://avatars0.githubusercontent.com/u/54790525?s=400&u=b50960a6416302bfff7eaa221cb93cedab8c075e&v=4)">
-        </div>
-
-        <div class="sqr"
-          style="--img: url(https://images.unsplash.com/photo-1582565245597-1d14b23c5647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1339&q=80)">
-        </div>
-
-        <div class="sqr"
-          style="--img: url(https://avatars2.githubusercontent.com/u/54761358?s=400&u=8999797f2fcb6d9029c382af31f091af7394be09&v=4)">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="./assets/img/team/Akshay_sir.jpg" alt="team member" class="img-responsive">
+            </div>
+            <div class="content">
+              <h3 class="title">Akshay Sharma</h3>
+              <span class="post">Web Developer</span>
+              <ul class="social">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-
-        <div class="sqr"
-          style="--img: url(https://avatars0.githubusercontent.com/u/56212029?s=400&u=16cbc5612a9328c2ed3ae1c1ffce8779bf866e55&v=4)">
+        <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="./assets/img/team/Satya Sir.jpg" alt="team member" class="img-responsive">
+            </div>
+            <div class="content">
+              <h3 class="title">Satya Prakash</h3>
+              <span class="post">Web Developer</span>
+              <ul class="social">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div> 
-
-    <!--Creater section-->
-     </div>
-    <div class="row createrNew">
-      <div class="card col-md-4">
-        <div class="imgBox">
-          <img style="width: 310px; height: 300px;"
-            src="https://avatars3.githubusercontent.com/u/54761473?s=400&u=70ff584a841f0748305e405fe3db9eca5ddd2608&v=4)">
-        </div>
-        <div class="details">
-          <h1>Nishu Rai</h1>
-        </div>
-      </div>
-      <div class="card col-md-4">
-        <div class="imgBox">
-          <img style="width: 310px; height: 300px;"
-            src="https://avatars0.githubusercontent.com/u/54790525?s=400&u=b50960a6416302bfff7eaa221cb93cedab8c075e&v=4">
-        </div>
-        <div class="details">
-          <h1>Kumari Palak</h1>
-        </div>
-      </div>
-      <div class="card col-md-4">
-        <div class="imgBox">
-          <img style="width: 310px; height: 300px;"
-            src="https://images.unsplash.com/photo-1582565245597-1d14b23c5647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1339&q=80">
-        </div>
-        <div class="details">
-          <h1> Aman Singh</h1>
-        </div>
-      </div>
-      <div class="card col-md-4">
-        <div class="imgBox">
-          <img style="width: 310px; height: 300px;"
-            src="https://avatars2.githubusercontent.com/u/54761358?s=400&u=8999797f2fcb6d9029c382af31f091af7394be09&v=4">
-        </div>
-        <div class="details">
-          <h1>Snehasis Sahoo</h1>
-        </div>
-      </div>
-      <div class="card col-md-4">
-        <div class="imgBox">
-          <img style="width: 310px; height: 300px;"
-            src="https://avatars0.githubusercontent.com/u/56212029?s=400&u=16cbc5612a9328c2ed3ae1c1ffce8779bf866e55&v=4">
-        </div>
-        <div class="details">
-          <h1>Rishub Rathore</h1>
+        <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="./assets/img/team/Deepshikha Mam.jpg" alt="team member" class="img-responsive">
+            </div>
+            <div class="content">
+              <h3 class="title">Deepshikha Tripathi </h3>
+              <span class="post">Web Developer</span>
+              <ul class="social">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
+  </section>
+  <!-- Contact -->
 
-
-    <!-- Contact -->
-
-    <section id="contactus">
-      <h1>Contact us for any query , any-time</h1>
-      <p style="font-family: 'AvenirLTStd-Medium'; color: gray;">We are always here to help you</p>
-      <div class="contacts">
-
-
-        <div class="contactbox">
-          <a style="text-decoration: none;" href="https://instagram.com/innerve24hrs">
-            <div class="contactbtn">
-              <i class="fab fa-whatsapp fa-3x"></i>
-              <p>Whatsapp</p>
-              <p>Replies faster than your crush.<br>
-                Only ask queries.</p>
+  <div id="creator">
+    <h1><code>Creators</code></h1>
+    <!--Creator section-->
+  </div>
+  <div class="container">
+    <div class="creator">
+      <div class="row create">
+        <div class="col-md-4">
+          <div class="single-album">
+            <div class="album-img">
+              <img
+                src="https://avatars3.githubusercontent.com/u/54761473?s=400&u=70ff584a841f0748305e405fe3db9eca5ddd2608&v=4"
+                alt="Nishu">
             </div>
-          </a>
-        </div>
-
-        <div class="contactbox">
-          <a style="text-decoration: none;" href="https://instagram.com/innerve24hrs">
-            <div class="contactbtn">
-              <i class=" insta fab fa-instagram fa-3x"></i>
-              <p>Instagram</p>
-              <p>Follow us for memes and information<br>
-                Can also DM for queries.</p>
+            <div class="album-content">
+              <div class="album-info">
+                <h2>Nishu Rai</h2>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
-
-        <div class="contactbox">
-          <a style="text-decoration: none;" href="https://github.com/aitoss">
-            <div class="contactbtn">
-              <i class=" github fab fa-github fa-3x"></i>
-              <p>GitHub</p>
-              <p>We post all of our code-cool stuff here. <br>
-                Feel free to fork from here.</p>
+        <div class="col-md-4">
+          <div class="single-album">
+            <div class="album-img">
+              <img
+                src="https://avatars0.githubusercontent.com/u/54790525?s=400&u=b50960a6416302bfff7eaa221cb93cedab8c075e&v=4"
+                alt="Nishu">
             </div>
-          </a>
-        </div>
-
-        <div class="contactbox">
-          <a style="text-decoration: none;" href="https://www.linkedin.com/company/open-source-software-club/">
-            <div class="contactbtn">
-              <i class="linkedin fab fa-linkedin fa-3x"></i>
-              <p>LinkedIn</p>
-              <p>Connect with us and increase you cirlce.<br>
-                It's always better to do so.</p>
+            <div class="album-content">
+              <div class="album-info">
+                <h2>Kumari Palak</h2>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
-
-        <div class="contactbox">
-          <a style="text-decoration: none;" href="mailto: innerve24hrs@gmail.com">
-            <div class="contactbtn">
-              <i class="far fa-envelope fa-3x"></i>
-              <p>E-mail Us</p>
-              <p>Feel free to email any query any-time.<br>
-                We prefer Insta-DM btw.</p>
+        <div class="col-md-4">
+          <div class="single-album">
+            <div class="album-img">
+              <img
+                src="https://images.unsplash.com/photo-1582565245597-1d14b23c5647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1339&q=80"
+                alt="Nishu">
             </div>
-          </a>
-        </div>
-
-        <div class="contactbox">
-          <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
-            <div class="contactbtn">
-              <i class="fab fa-facebook fa-3x"></i>
-              <p>Facebook</p>
-              <p>Like our page for future updates.<br>
-                There are memes too.</p>
+            <div class="album-content">
+              <div class="album-info">
+                <h2>Aman singh</h2>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
-
-
-        <div class="contactbox">
-          <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
-            <div class="contactbtn">
-              <i class="fab fa-twitter fa-3x"></i>
-              <p>Twitter</p>
-              <p>We do not tweet that much, but<br>
-                when we do it's epic</p>
+        <div class="col-md-4">
+          <div class="single-album">
+            <div class="album-img">
+              <img
+                src="https://avatars2.githubusercontent.com/u/54761358?s=400&u=8999797f2fcb6d9029c382af31f091af7394be09&v=4"
+                alt="Nishu">
             </div>
-          </a>
-        </div>
-
-        <div class="contactbox">
-          <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
-            <div class="contactbtn">
-              <i class="fab fa-telegram fa-3x"></i>
-              <p>Telegram</p>
-              <p>Group for developers, by developers.<br>
-                Free courses and more.</p>
+            <div class="album-content">
+              <div class="album-info">
+                <h2>Snehasis Sahoo</h2>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
-
+        <div class="col-md-4">
+          <div class="single-album">
+            <div class="album-img">
+              <img
+                src="https://avatars0.githubusercontent.com/u/56212029?s=400&u=16cbc5612a9328c2ed3ae1c1ffce8779bf866e55&v=4"
+                alt="Nishu">
+            </div>
+            <div class="album-content">
+              <div class="album-info">
+                <h2>Rishab Rathore</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- Contact -->
+  <!-- Contact -->
 
-    <!-- Jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/victor/1.1.0/victor.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tweakpane@1.3.2/dist/tweakpane.min.js"></script>
+  <section id="contactus">
+    <h1>Contact us for any query , any-time</h1>
+    <p style="font-family: 'AvenirLTStd-Medium'; color: gray;">We are always here to help you</p>
+    <div class="contacts">
 
 
-    <!-- Apni khud ki JS file -->
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/observers.js"></script>
+      <div class="contactbox">
+        <a style="text-decoration: none;" href="https://instagram.com/innerve24hrs">
+          <div class="contactbtn">
+            <i class="fab fa-whatsapp fa-3x"></i>
+            <p>Whatsapp</p>
+            <p>Replies faster than your crush.<br>
+              Only ask queries.</p>
+          </div>
+        </a>
+      </div>
 
-    <!-- test scripts -->
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+      <div class="contactbox">
+        <a style="text-decoration: none;" href="https://instagram.com/innerve24hrs">
+          <div class="contactbtn">
+            <i class=" insta fab fa-instagram fa-3x"></i>
+            <p>Instagram</p>
+            <p>Follow us for memes and information<br>
+              Can also DM for queries.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contactbox">
+        <a style="text-decoration: none;" href="https://github.com/aitoss">
+          <div class="contactbtn">
+            <i class=" github fab fa-github fa-3x"></i>
+            <p>GitHub</p>
+            <p>We post all of our code-cool stuff here. <br>
+              Feel free to fork from here.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contactbox">
+        <a style="text-decoration: none;" href="https://www.linkedin.com/company/open-source-software-club/">
+          <div class="contactbtn">
+            <i class="linkedin fab fa-linkedin fa-3x"></i>
+            <p>LinkedIn</p>
+            <p>Connect with us and increase you cirlce.<br>
+              It's always better to do so.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contactbox">
+        <a style="text-decoration: none;" href="mailto: innerve24hrs@gmail.com">
+          <div class="contactbtn">
+            <i class="far fa-envelope fa-3x"></i>
+            <p>E-mail Us</p>
+            <p>Feel free to email any query any-time.<br>
+              We prefer Insta-DM btw.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contactbox">
+        <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
+          <div class="contactbtn">
+            <i class="fab fa-facebook fa-3x"></i>
+            <p>Facebook</p>
+            <p>Like our page for future updates.<br>
+              There are memes too.</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="contactbox">
+        <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
+          <div class="contactbtn">
+            <i class="fab fa-twitter fa-3x"></i>
+            <p>Twitter</p>
+            <p>We do not tweet that much, but<br>
+              when we do it's epic</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contactbox">
+        <a style="text-decoration: none;" href="https://www.facebook.com/groups/ossclubait/">
+          <div class="contactbtn">
+            <i class="fab fa-telegram fa-3x"></i>
+            <p>Telegram</p>
+            <p>Group for developers, by developers.<br>
+              Free courses and more.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <!-- Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/victor/1.1.0/victor.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tweakpane@1.3.2/dist/tweakpane.min.js"></script>
+
+
+  <!-- Apni khud ki JS file -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/observers.js"></script>
+
+  <!-- test scripts -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
 
 
 </body>
